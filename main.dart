@@ -51,7 +51,7 @@ class _LocalAudio extends State<LocalAudio> {
           width: 300,
           height: 300,
           child: Image.network(
-              'https://github.com/Pratibha-hue/flutter_class/blob/master/cap.jpg?raw=true'),
+              'https://img1.etsystatic.com/000/0/5486958/il_570xN.295864817.jpg'),
         ),
         Container(
           padding: EdgeInsets.all(16.0),
@@ -69,15 +69,15 @@ class _LocalAudio extends State<LocalAudio> {
     return ButtonTheme(
       minWidth: 48.0,
       child: Container(
-        color: Colors.white,
+        color: Colors.black,
         width: 150,
         height: 45,
         child: RaisedButton(
             shape:
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
             child: Text(txt),
-            color: Colors.grey,
-            textColor: Colors.white,
+            color: Colors.white,
+            textColor: Colors.redAccent,
             onPressed: onPressed),
       ),
     );
@@ -85,8 +85,8 @@ class _LocalAudio extends State<LocalAudio> {
 
   Widget slider() {
     return Slider(
-        activeColor: Colors.black,
-        inactiveColor: Colors.redAccent.shade400,
+        activeColor: Colors.redAccent.shade400,
+        inactiveColor: Colors.white,
         value: _position.inSeconds.toDouble(),
         min: 0.0,
         max: _duration.inSeconds.toDouble(),
@@ -118,7 +118,7 @@ class _LocalAudio extends State<LocalAudio> {
     return DefaultTabController(
       length: 1,
       child: Scaffold(
-        backgroundColor: Colors.blueGrey.shade800,
+        backgroundColor: Colors.black,
         appBar: AppBar(
           elevation: 1.0,
           backgroundColor: Colors.redAccent.shade400,
