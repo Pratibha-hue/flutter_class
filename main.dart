@@ -51,7 +51,7 @@ class _LocalAudio extends State<LocalAudio> {
           width: 300,
           height: 300,
           child: Image.network(
-              'https://github.com/Pratibha-hue/flutter_class/blob/master/IMG_20200111_142522.jpg?raw=true'),
+              'https://github.com/Pratibha-hue/flutter_class/blob/master/cap.jpg?raw=true'),
         ),
         Container(
           padding: EdgeInsets.all(16.0),
